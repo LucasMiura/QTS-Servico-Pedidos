@@ -42,7 +42,7 @@ class PedidoService:
         resultado_gateway = self.gateway.processar_transacao(
             valor=valor_total,
             metodo=request.metodo_pagamento.value,
-            client_cpf=request.cliente.cpf,
+            cliente_cpf=request.cliente.cpf,
             dados_pagamento=request.dados_pagamento
         )
 
